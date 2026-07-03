@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de inscrição para avaliação de atletas do Grêmio — projeto acadêmico."
+    />
+    <title>O Grêmio te convoca!</title>
+    <link rel="icon" href="images/Gremio_logo.svg.webp" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="club-brand">
+        <img src="images/Gremio_logo.svg.webp" alt="Escudo do Grêmio" />
+      </a>
+    </header>
+
+    <main>
+      <section class="design" aria-labelledby="titulo-principal">
+        <div class="design-2"></div>
+
+        <div class="design-content">
+          <p class="eyebrow">Avaliação de atletas • Projeto de exercício</p>
+
+          <div class="title-ribbon">
+            <span class="ribbon-mark" aria-hidden="true"></span>
+            <h1 id="titulo-principal">O Grêmio te convoca!</h1>
+            <span class="ribbon-mark" aria-hidden="true"></span>
+          </div>
+
+          <div class="callout">
+            <span class="callout-line" aria-hidden="true"></span>
+            <p>
+              O Grêmio convoca gremistas de <strong>18 a 40 anos</strong> para
+              participarem da avaliação visando reforçar o plantel imortal e
+              evitar a queda para a segunda divisão. Inscreva-se!
+            </p>
+          </div>
+
+          <form id="inscricao" class="registration-card" novalidate>
+            <div class="form-heading">
+              <div>
+                <span class="form-kicker">Faça parte da seleção</span>
+                <h2>Inscrição para avaliação</h2>
+              </div>
+              <span class="form-number">1903</span>
+            </div>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="nome">Nome completo</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Digite seu nome"
+                  minlength="3"
+                  required
+                />
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+
+              <div class="field field-full">
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="seu@email.com"
+                  required
+                />
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="posicao">Posição</label>
+                <select id="posicao" name="posicao" required>
+                  <option value="" selected disabled>Selecione</option>
+                  <option>Goleiro</option>
+                  <option>Lateral-direito</option>
+                  <option>Zagueiro</option>
+                  <option>Lateral-esquerdo</option>
+                  <option>Volante</option>
+                  <option>Meia</option>
+                  <option>Ponta</option>
+                  <option>Centroavante</option>
+                </select>
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="cep">CEP</label>
+                <div class="input-with-status">
+                  <input
+                    id="cep"
+                    name="cep"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="postal-code"
+                    placeholder="00000-000"
+                    maxlength="9"
+                    required
+                  />
+                  <span
+                    id="cep-status"
+                    class="cep-status"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+            </div>
+
+            <div id="address-box" class="address-box" hidden aria-live="polite">
+              <span class="address-label">Endereço localizado</span>
+              <strong id="address-text"></strong>
+            </div>
+
+            <button id="submit-button" class="submit-button" type="submit">
+              <span>Inscrever-se</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </button>
+
+            <p class="form-note">
+              Ao enviar, os dados serão apenas validados no navegador. E você
+              será considerado a jogar ao lado de Leo Pérez.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="partners" aria-labelledby="parceiros-titulo">
+        <div class="partners-heading">
+          <span></span>
+          <div>
+            <p>Juntos pelo Imortal</p>
+            <h2 id="parceiros-titulo">Patrocinadores e parceiros oficiais</h2>
+          </div>
+          <span></span>
+        </div>
+
+        <img
+          src="images/Footer - Patrocinadores.png"
+          alt="Painel ilustrativo de patrocinadores e parceiros"
+          loading="lazy"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2026 Grêmio Foot-Ball Porto Bagrense — projeto acadêmico sem vínculo
+        oficial.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
